@@ -50,8 +50,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-T", "--TOKEN", help = "Plex token for connection to API", type=str)
 parser.add_argument("-l", "--Library", help = "Plex library name (eg, 'Movies', also default)", type=str, default="Movies")
 parser.add_argument("-b", "--BaseURL", help = "BaseURL for Plex connection. Defaults to 'http://localhost:32400'", type=str, default="http://localhost:32400")
-parser.add_argument("-n", "--Number", help = "Number of items to be concerned with.", type=int)
-parser.add_argument("-y", "--Confirm", help = "Confirms doing the action on all displayed output.", action='store_true')
 
 # Read arguments from command line
 args = parser.parse_args()
